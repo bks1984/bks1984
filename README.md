@@ -33,7 +33,7 @@ AI Product Architect working on LLM and generative-AI applications. The projects
 
 | Project | What it does | Stack |
 | --- | --- | --- |
-| [**credit-scorecard-give-me-some-credit**](https://github.com/bks1984/credit-scorecard-give-me-some-credit) | Points-based application scorecard on Kaggle's *Give Me Some Credit* (150k borrowers) that predicts 90+ days delinquency. Monotonic WoE binning, IV-based selection and sign-constrained logistic regression, scaled to 600 points at 50:1 odds with 20 points to double the odds (PDO 20). Holdout Gini 0.70, KS 0.55, PSI ≈ 0. Ships with score-band calibration, a cut-off strategy and a deployable JSON scorecard. | Python · pandas · scikit-learn · matplotlib · pytest · GitHub Actions |
+| [**credit-scorecard-give-me-some-credit**](https://github.com/bks1984/credit-scorecard-give-me-some-credit) · [live dashboard](https://bks1984.github.io/credit-scorecard-give-me-some-credit/) | Points-based application scorecard on Kaggle's *Give Me Some Credit* (150k borrowers) that predicts 90+ days delinquency. Monotonic WoE binning, IV-based selection and sign-constrained logistic regression, scaled to 600 points at 50:1 odds with 20 points to double the odds (PDO 20). Holdout Gini 0.70, KS 0.55, PSI ≈ 0. Ships with score-band calibration, a cut-off strategy and a deployable JSON scorecard, plus an interactive validation dashboard with live filters. | Python · pandas · scikit-learn · matplotlib · d3.js · pytest · GitHub Actions |
 
 **Data & MLOps**
 
