@@ -15,6 +15,7 @@ AI Product Architect working on LLM and generative-AI applications. The projects
 
 - **LLMs, RAG & Generative AI:** retrieval-augmented generation, vector search, prompt design and guardrails against made-up answers
 - **Evaluation:** measuring groundedness and relevance with LLM-as-a-judge, so improvements are proven rather than assumed
+- **Credit risk modelling:** bank-style application scorecards (WoE/IV, logistic regression, points scaling) with a full validation pack: Gini, KS, PSI and calibration
 - **Data & analytics:** turning raw transaction data into dashboards that support decisions
 - **Product & architecture:** writing PRDs, defining scope and success metrics, and designing AI systems end to end
 
@@ -27,6 +28,12 @@ AI Product Architect working on LLM and generative-AI applications. The projects
 | [**medical-rag-assistant**](https://github.com/bks1984/medical-rag-assistant) | Clinical Q&A assistant over the 4,000-page Merck Manual. Answers only from retrieved excerpts and cites chapter and page. In an LLM-as-a-judge evaluation, RAG scored 5.0/5 for groundedness, against 1.75 for a plain LLM. | Python · LangChain · ChromaDB · Groq (gpt-oss-120b) / OpenAI · sentence-transformers · Streamlit |
 | [**llm-research-assistant**](https://github.com/bks1984/llm-research-assistant) | Upload long research PDFs and ask questions in plain English. Answers cite file and page, and the app also extracts paper metadata and summaries, finds trends across papers, and compares RAG with a plain LLM. | Python · LangChain · ChromaDB · Groq / OpenAI · Streamlit · Docker |
 | [**rag-telecom-chatbot**](https://github.com/bks1984/rag-telecom-chatbot) | Self-serve support assistant that answers Tier-1 telecom questions only from an FAQ, resolved tickets and PDF guides, cites its sources, and escalates when it can't answer confidently. | Python · LangChain · ChromaDB · Groq (Qwen) · Streamlit |
+
+**Credit Risk Modelling**
+
+| Project | What it does | Stack |
+| --- | --- | --- |
+| [**credit-scorecard-give-me-some-credit**](https://github.com/bks1984/credit-scorecard-give-me-some-credit) | Points-based application scorecard on Kaggle's *Give Me Some Credit* (150k borrowers) that predicts 90+ days delinquency. Monotonic WoE binning, IV-based selection and sign-constrained logistic regression, scaled to 600 points at 50:1 odds with 20 points to double the odds (PDO 20). Holdout Gini 0.70, KS 0.55, PSI ≈ 0. Ships with score-band calibration, a cut-off strategy and a deployable JSON scorecard. | Python · pandas · scikit-learn · matplotlib · pytest · GitHub Actions |
 
 **Data & MLOps**
 
@@ -44,6 +51,7 @@ AI Product Architect working on LLM and generative-AI applications. The projects
   <img src="https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white" alt="OpenAI"/>
   <img src="https://img.shields.io/badge/Groq-F55036?style=flat-square" alt="Groq"/>
   <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Hugging Face"/>
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" alt="scikit-learn"/>
   <img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="pandas"/>
   <img src="https://img.shields.io/badge/D3.js-F9A03C?style=flat-square&logo=d3dotjs&logoColor=white" alt="D3.js"/>
   <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit"/>
